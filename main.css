@@ -6,8 +6,30 @@ body{
 }
 
 .container{
-    background-color: salmon;
-    margin-top: 200px;
+    
+    padding-top: 10%;
 }
 
+.carousel{
+    border: 2px solid violet;
+}
+
+#bg{
+    background-color: aquamarine;
+    width: 100%;
+    height: 100vh;
+}
+
+.card-body {
+   
+    text-align: center;
+}
+.card-title{
+font-size: 2.3rem;
+}
+
+audio{
+    width: 80%;
+    border:none;
+}
 
