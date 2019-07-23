@@ -7,15 +7,17 @@ body{
 
 .container{
     
-    padding-top: 10%;
+    padding-top: 8%;
 }
 
 .carousel{
-    border: 2px solid violet;
+   
 }
 
 #bg{
-    background-color: aquamarine;
+    background-image: url('images/bg1.png');
+    background-size: cover;
+    background-repeat: no-repeat;
     width: 100%;
     height: 100vh;
 }
@@ -25,11 +27,30 @@ body{
     text-align: center;
 }
 .card-title{
-font-size: 2.3rem;
+font-size: 1.3rem;
 }
 
 audio{
-    width: 80%;
+    width: 90%;
     border:none;
+    height: 50px;
 }
+
+.carousel-inner {
+    position: relative;
+    width: 100%;
+    overflow: hidden;
+    border-radius: 10px;
+}
+
+.bg-light {
+    opacity: 0.9;
+
+}
+
+.navbar-nav {
+    
+    font-weight: 700;
+}
+
 
