@@ -41,10 +41,21 @@ export default {
         this.audio.volume = val / 100;
     },
     next() {
+        this.pause();
         this.currentTrack++;
 
         if (this.currentTrack == this.audioData.length) {
             this.restart();
+        }
+        this.update();
+        this.play();
+    },
+    previous(){
+        this.pause();
+        this.currentTrack--;
+
+        if (this.currentTrack == -1) {
+            this.restartReverse();
         }
         this.update();
         this.play();
@@ -71,6 +82,10 @@ export default {
     },
     restart() {
         this.currentTrack = 0;
+        this.update();
+    },
+    restartReverse() {
+        this.currentTrack = (this.audioData.length -1);
         this.update();
     }
 }
